@@ -1,8 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const ProjectsContainer = styled.nav`
+    text-align: center;
+    min-height: 300px;
+    margin: 150px 30px 30px 30px;
+    box-shadow: 0 2px 0 0 #f5f5f5;
+`;
 function Projects() {
   return (
-    <>
+    <ProjectsContainer>
         <div id="projects" className="background-alt">
             <h2 className="heading">Projects</h2>
             <div className="container">
@@ -35,7 +42,7 @@ function Projects() {
                 </div>
             </div>
         </div>
-    </>
+    </ProjectsContainer>
   );
 }
 

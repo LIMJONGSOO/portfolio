@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const EducationContainer = styled.nav`
+    text-align: center;
+    min-height: 300px;
+    margin: 150px 30px 30px 30px;
+    box-shadow: 0 2px 0 0 #f5f5f5;
+`;
 function Education() {
   return (
     <>
-        <div id="education">
+        <EducationContainer id="education">
             <h2 className="heading">Education</h2>
             <div className="education-block">
                 <h3>University of Ottawa</h3>
@@ -30,7 +37,7 @@ function Education() {
                     </li>
                 </ul>
             </div>
-        </div>
+        </EducationContainer>
     </>
   );
 }

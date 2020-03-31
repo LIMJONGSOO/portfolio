@@ -2,75 +2,56 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavigationContainer = styled.nav`
+  position: relative;
   align-items: stretch;
   display: flex;
-  padding: 1.2rem 0;
-  box-shadow: none;
-  z-index: auto;
   background-color: #fff;
+  padding: 1.2rem 0;
+  z-index: auto;
   box-shadow: 0 2px 0 0 #f5f5f5;
   min-height: 3.25rem;
-  position: relative;
 `;
 
 const NavigationWrapper = styled.div`
+  position: relative;
   align-items: stretch;
   display: flex;
+  margin: 0 auto;
+  padding: 0 11px;
   min-height: 3.25rem;
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  padding: 0 11px;
 `;
 
 const NavigationLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const LogoImage = styled.img`
-  max-height: 4rem;
-  height: auto;
-  max-width: 100%;
+  margin: 0px 10px;
 `;
 
 const NavigationMenu = styled.div`
-  flex-grow: 1;
-  flex-shrink: 0;
   align-items: stretch;
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
   box-shadow: none;
   padding: 0.5rem 0;
-  background-color: #fff;
 `;
 
 const NavigationEnd = styled.div`
-  justify-content: flex-end;
-  margin-left: auto;
   align-items: stretch;
   display: flex;
-`;
-
-const NavigationItem = styled.div`
-  font-size: 18px;
-  font-weight: 300;
-  color: #293347;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #4a4a4a;
-  display: block;
-  line-height: 1.5;
-  padding: 0.5rem 0.75rem;
-  position: relative;
+  justify-content: flex-end;
+  margin-left: auto;
 `;
 
 const SocialContainer = styled.div`
-  display: flex;
+  position: relative;
   align-items: center;
+  display: block;
   justify-content: center;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
 `;
 
 const SocialButton = styled.i`
@@ -92,32 +73,25 @@ export default class Naigator extends React.Component {
         return (
             <NavigationContainer>
                 <NavigationWrapper>
-                <NavigationLogo>
-                </NavigationLogo>
-                <NavigationMenu>
+                  <NavigationLogo>
+                    <h1>Deving</h1>
+                  </NavigationLogo>
+                  <NavigationMenu>
                     <NavigationEnd>
-                    <NavigationItem>
-                        <SocialContainer>
-                        <a
-                            target="_blank"
-                        >
-                            <SocialButton className="fab fa-linkedin-in" />
-                        </a>
-                        <SocialButton
-                            className="far fa-envelope"
-                        />
+                      <SocialContainer>
                         <a target="_blank">
-                            <SocialButton className="fab fa-github" />
+                          <SocialButton className="fab fa-linkedin-in" />
                         </a>
-                        <a
-                            target="_blank"
-                        >
-                            <SocialButton className="fab fa-youtube" />
+                          <SocialButton className="far fa-envelope"/>
+                        <a target="_blank">
+                          <SocialButton className="fab fa-github" />
                         </a>
-                        </SocialContainer>
-                    </NavigationItem>
+                        <a target="_blank">
+                          <SocialButton className="fab fa-youtube" />
+                        </a>
+                      </SocialContainer>
                     </NavigationEnd>
-                </NavigationMenu>
+                  </NavigationMenu>
                 </NavigationWrapper>
             </NavigationContainer>
         );

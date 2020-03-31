@@ -1,14 +1,20 @@
 import React from 'react';
+import styled from 'styled-components';
 
+const FooterContainer = styled.nav`
+    text-align: center;
+    margin: 10px 10px 0 0;
+    box-shadow: 0 2px 0 0 #f5f5f5;
+`;
 function Footer() {
   return (
-    <>
+    <FooterContainer>
         <footer>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-5 copyright">
                         <p>
-                            Copyright &copy; 2017 YOUR NAME
+                            Copyright &copy; 2020 JONGSOO LIM
                         </p>
                     </div>
                     <div className="col-sm-2 top">
@@ -41,7 +47,7 @@ function Footer() {
                 </div>
             </div>
         </footer>
-    </>
+    </FooterContainer>
   );
 }
 

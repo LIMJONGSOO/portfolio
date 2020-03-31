@@ -1,25 +1,39 @@
 import React from 'react';
+import styled from 'styled-components';
 
-function Main() {
-  return (
-    <>
-        <div id="lead">
-            <div id="lead-content">
-                <h1>Ryan Fitzgerald</h1>
-                <h2>Software Engineer</h2>
-                <a href="#" className="btn-rounded-white">Download Resume</a>
-            </div>
+const MainContainer = styled.nav`
+    text-align: center;
+    min-height: 90vh;
+    padding: 150px 30px 30px 30px;
+    box-shadow: 0 2px 0 0 #f5f5f5;
+`;
 
-            <div id="lead-overlay"></div>
+class Main extends React.Component {
 
-            <div id="lead-down">
-                <span>
-                    <i className="fa fa-chevron-down" aria-hidden="true"></i>
-                </span>
-            </div>
-        </div>
-    </>
-  );
+    constructor(props: Readonly<{}>) {
+        super(props);
+        this.state = {
+            
+        }
+    }
+
+    public render() {
+        return (
+            <MainContainer>
+                <div>
+                    <table>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h1>임종수</h1>
+                    <h2>Web Developer</h2>
+                    <a href="#" className="btn-rounded-white">Download Resume</a>
+                </div>
+            </MainContainer>
+          );
+    }
 }
 
 export default Main;
