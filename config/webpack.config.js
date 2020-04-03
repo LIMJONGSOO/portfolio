@@ -43,7 +43,7 @@ const imageInlineSizeLimit = parseInt(
 const useTypeScript = fs.existsSync(paths.appTsConfig);
 
 // style files regexes
-const cssRegex = /\.css$/;
+const cssRegex = /\.scss$/;
 const cssModuleRegex = /\.module\.css$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
@@ -105,6 +105,10 @@ module.exports = function(webpackEnv) {
           ],
           sourceMap: isEnvProduction && shouldUseSourceMap,
         },
+      },
+      {
+        loader: require.resolve('sass-loader'),
+        options: {}
       },
     ].filter(Boolean);
     if (preProcessor) {
@@ -287,6 +291,7 @@ module.exports = function(webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
+        'src': path.resolve(__dirname, '../src'),
         // Support React Native Web
         // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
         'react-native': 'react-native-web',
@@ -494,7 +499,7 @@ module.exports = function(webpackEnv) {
               // its runtime that would otherwise be processed through "file" loader.
               // Also exclude `html` and `json` extensions so they get processed
               // by webpacks internal loaders.
-              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
+              exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.scss$/],
               options: {
                 name: 'static/media/[name].[hash:8].[ext]',
               },
