@@ -5,6 +5,7 @@ const AboutMeContainer = styled.nav`
     text-align: center;
     min-height: 300px;
     margin: 150px 30px 30px gb30px;
+    padding: 200px 30px 30px 30px;
     box-shadow: 0 2px 0 0 #f5f5f5; 
 `;
 
