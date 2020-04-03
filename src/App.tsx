@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigator from './components/Navigator';
-import Experience from './components/Experience';
-import Main from './components/Main';
-import AboutMe from './components/AboutMe';
-import Education from './components/Education';
-import Projects from './components/Projects';
-import Skills from './components/Skils';
-import Footer from './components/Footer';
+import Navigator from './components/Navigator/Navigator';
+import Experience from './components/Experience/Experience';
+import Main from './components/Main/Main';
+import AboutMe from './components/AboutMe/AboutMe';
+import Education from './components/Education/Education';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (

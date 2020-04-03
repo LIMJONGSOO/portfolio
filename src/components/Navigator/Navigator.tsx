@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import './Navigator.scss';
+import logo from 'src/images/logo.png';
 
 const NavigationContainer = styled.nav`
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: stretch;
   display: flex;
   background-color: #fff;
@@ -23,6 +27,8 @@ const NavigationWrapper = styled.div`
 `;
 
 const NavigationLogo = styled.div`
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +80,7 @@ export default class Naigator extends React.Component {
             <NavigationContainer>
                 <NavigationWrapper>
                   <NavigationLogo>
-                    <h1>Deving</h1>
+                    <img className="logo" src={logo}></img>
                   </NavigationLogo>
                   <NavigationMenu>
                     <NavigationEnd>
