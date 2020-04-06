@@ -1,16 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const FooterContainer = styled.nav`
-    text-align: center;
-    margin: 10px 10px 0 0;
-    box-shadow: 0 2px 0 0 #f5f5f5;
-`;
 function Footer() {
   return (
-    <FooterContainer>
+    <div className="footer">
         <footer>
-            <div className="container">
+            <div>
                 <div className="row">
                     <div className="col-sm-5 copyright">
                         <p>
@@ -41,7 +35,7 @@ function Footer() {
                 </div>
             </div>
         </footer>
-    </FooterContainer>
+    </div>
   );
 }
 

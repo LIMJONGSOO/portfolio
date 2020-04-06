@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+
 import './Skills.scss';
 import Angular from 'src/images/Angular.png';
 import react from 'src/images/React.png';
@@ -14,17 +14,10 @@ import CSS from 'src/images/CSS.png';
 import git from 'src/images/git.png';
 import SVN from 'src/images/SVN.png';
 
-
-const SkillsContainer = styled.nav`
-  text-align: center;
-    min-height: 300px;
-    margin: 150px 30px 30px 30px;
-    box-shadow: 0 2px 0 0 #f5f5f5;
-`;
 function Skills() {
     
   return (
-    <SkillsContainer>
+	<div id="skills" className="container">
       <div id="skills">
         <h2>Skills</h2>
         <div className="skills">
@@ -43,7 +36,7 @@ function Skills() {
 					<img src={SVN} alt=""/>
 				</div>
       </div>
-    </SkillsContainer>
+	</div>
   );
 }
 

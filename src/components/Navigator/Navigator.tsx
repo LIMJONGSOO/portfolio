@@ -84,6 +84,10 @@ export default class Naigator extends React.Component {
                     <img className="logo" src={logo}></img>
                   </NavigationLogo>
                   <NavigationMenu>
+                    <a href="#main">main</a> 
+                    <a href="#about">about mew</a> 
+                    <a href="#skills">skills</a> 
+                    <a href="#projects">project</a>
                     <NavigationEnd>
                       <SocialContainer>
                         <a target="_blank">
@@ -114,10 +118,24 @@ export default class Naigator extends React.Component {
                             </svg>
                           </SocialButton>
                         </a>
+                        {/* <a target="_blank">
+                          <SocialButton className="fab fa-youtube">
+                            <svg height="50" width="50" viewBox="0 0 48 48">
+                              <g transform="translate(0,50) scale(0.05,-0.05)" fill="#3a3934" stroke="none">
+                                <path d="M344 819 c-162 -50 -281 -253 -256 -438 64 -468 745 -438 786 35 23 277 -253 487 -530 403z m146 -178 c25 -76 57 -96 98 -62 19 15 43 16 81 1 29 -11 76 -20 103 -20 67 0 45 -32 -32 -47 -45 -9 -69 -30 -89 -78 -31 -74 -94 -137 -181 -181 -33 -16 -77 -49 -98 -72 -78 -86 -100 -19 -32 93 50 83 54 75 -40 103 -115 34 -155 140 -53 142 9 0 13 29 10 65 -6 61 -3 65 56 62 48 -2 66 7 74 37 16 61 76 36 103 -43z"/>
+                              </g>
+                            </svg>
+                          </SocialButton>
+                        </a> */}
                       </SocialContainer>
                     </NavigationEnd>
                   </NavigationMenu>
                 </NavigationWrapper>
+                <a href="#main" className="upButton">
+                  <svg height="50" width="50" viewBox="0 0 24 24">
+                    <path fill="#3a3934" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"></path>
+                  </svg>
+                </a>
             </NavigationContainer>
         );
     }

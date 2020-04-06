@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+
 import './Main.scss';
-  
-const MainContainer = styled.nav`
-    text-align: center;
-    min-height: 90vh;
-    padding: 200px 30px 30px 30px;
-    box-shadow: 0 2px 0 0 #f5f5f5;
-`;
 
 type MyProps = { };
 type MyState = { 
@@ -18,6 +11,24 @@ type MyState = {
     nameLocation: Array<{x:number, y:number}>
  };
 class Main extends Component<MyProps, MyState> {
+    updateDimensions = () => {
+        console.log(window.innerWidth);
+        this.setState({
+            x: Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10)),
+            y: (window.innerWidth > 400  ? 20 : 40),
+            tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
+            yArr: Array.from(Array(20), () => 0),
+            nameLocation: new Array()
+        });
+        this.drawNameLocation();
+    };
+    componentDidMount() {
+        this.drawNameLocation();
+        window.addEventListener('resize', this.updateDimensions);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+    }
 
     constructor(props: any) {
         super(props);
@@ -28,71 +39,76 @@ class Main extends Component<MyProps, MyState> {
             yArr: Array.from(Array(20), () => 0),
             nameLocation: new Array()
         };
-
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 11});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 10});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 9});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 8});
-        this.state.nameLocation.push({x: this.state.x - 10, y:this.state.y - 8});
-        this.state.nameLocation.push({x: this.state.x - 10, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 9, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 7});
-
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 11});
-        this.state.nameLocation.push({x: this.state.x - 4, y:this.state.y - 11});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 11});
-        this.state.nameLocation.push({x: this.state.x - 2, y:this.state.y - 11});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 10});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 9});
-        this.state.nameLocation.push({x: this.state.x - 4, y:this.state.y - 9});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 9});
-        this.state.nameLocation.push({x: this.state.x - 2, y:this.state.y - 9});
-        this.state.nameLocation.push({x: this.state.x - 2, y:this.state.y - 8});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 4, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 7});
-        this.state.nameLocation.push({x: this.state.x - 2, y:this.state.y - 7});
-        
-        this.state.nameLocation.push({x: this.state.x - 13, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 13, y:this.state.y - 4});
-        this.state.nameLocation.push({x: this.state.x - 13, y:this.state.y - 3});
-        this.state.nameLocation.push({x: this.state.x - 13, y:this.state.y - 2});
-        this.state.nameLocation.push({x: this.state.x - 13, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 12, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 11, y:this.state.y - 1});
-
-        this.state.nameLocation.push({x: this.state.x - 9, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 4});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 3});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 2});
-        this.state.nameLocation.push({x: this.state.x - 9, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 8, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 7, y:this.state.y - 1});
-
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 4, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 2, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 1, y:this.state.y - 5});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 4});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 4});
-        this.state.nameLocation.push({x: this.state.x - 1, y:this.state.y - 4});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 3});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 3});
-        this.state.nameLocation.push({x: this.state.x - 1, y:this.state.y - 3});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 2});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 2});
-        this.state.nameLocation.push({x: this.state.x - 1, y:this.state.y - 2});
-        this.state.nameLocation.push({x: this.state.x - 5, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 3, y:this.state.y - 1});
-        this.state.nameLocation.push({x: this.state.x - 1, y:this.state.y - 1});
-
     }
 
-    drawPuzzle () {
+    drawNameLocation() {
+        const newNameLocation = [];
+        
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 11});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 10});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 9});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 8});
+        newNameLocation.push({x: this.state.x - 10, y:this.state.y - 8});
+        newNameLocation.push({x: this.state.x - 10, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 9, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 7});
+
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 11});
+        newNameLocation.push({x: this.state.x - 4, y:this.state.y - 11});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 11});
+        newNameLocation.push({x: this.state.x - 2, y:this.state.y - 11});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 10});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 9});
+        newNameLocation.push({x: this.state.x - 4, y:this.state.y - 9});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 9});
+        newNameLocation.push({x: this.state.x - 2, y:this.state.y - 9});
+        newNameLocation.push({x: this.state.x - 2, y:this.state.y - 8});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 4, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 7});
+        newNameLocation.push({x: this.state.x - 2, y:this.state.y - 7});
+        
+        newNameLocation.push({x: this.state.x - 13, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 13, y:this.state.y - 4});
+        newNameLocation.push({x: this.state.x - 13, y:this.state.y - 3});
+        newNameLocation.push({x: this.state.x - 13, y:this.state.y - 2});
+        newNameLocation.push({x: this.state.x - 13, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 12, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 11, y:this.state.y - 1});
+
+        newNameLocation.push({x: this.state.x - 9, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 4});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 3});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 2});
+        newNameLocation.push({x: this.state.x - 9, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 8, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 7, y:this.state.y - 1});
+
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 4, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 2, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 1, y:this.state.y - 5});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 4});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 4});
+        newNameLocation.push({x: this.state.x - 1, y:this.state.y - 4});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 3});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 3});
+        newNameLocation.push({x: this.state.x - 1, y:this.state.y - 3});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 2});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 2});
+        newNameLocation.push({x: this.state.x - 1, y:this.state.y - 2});
+        newNameLocation.push({x: this.state.x - 5, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 3, y:this.state.y - 1});
+        newNameLocation.push({x: this.state.x - 1, y:this.state.y - 1});
+
+        this.setState({nameLocation: newNameLocation});
+    }
+
+    drawPuzzle() {
         let stop = true;
         this.state.yArr.map((xCnt, i) => {
             if(xCnt < this.state.x ) stop =false;
@@ -122,10 +138,11 @@ class Main extends Component<MyProps, MyState> {
     }
 
     render() {
-        this.drawPuzzle ();
+
+        this.drawPuzzle();
 
         return (
-            <MainContainer>
+            <div className="container" id="main">
                 <div>
                     <table className="puzzle">
                         <tbody>
@@ -146,7 +163,7 @@ class Main extends Component<MyProps, MyState> {
                     <br />
                     <a href="#" className="resume">Download Resume</a>
                 </div>
-            </MainContainer>
+            </div>
           );
     }
 }

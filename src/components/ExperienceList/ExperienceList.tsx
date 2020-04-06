@@ -1,8 +1,8 @@
 import React from 'react';
 
-function App() {
+function ExperienceList() {
   return (
-    <>
+    <div id="experiencelist" className="experience">
         <div id="lead">
             <div id="lead-content">
                 <h1>Ryan Fitzgerald</h1>
@@ -18,8 +18,8 @@ function App() {
                 </span>
             </div>
         </div>
-    </>
+    </div>
   );
 }
 
-export default App;
+export default ExperienceList;
