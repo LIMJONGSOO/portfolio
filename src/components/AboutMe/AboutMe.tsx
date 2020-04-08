@@ -1,4 +1,6 @@
 import React from 'react';
+import './AboutMe.scss';
+import me from 'src/images/limjs.jpg';
 
 
 function AboutMe() {
@@ -9,6 +11,7 @@ function AboutMe() {
                     <h2 className="heading">About Me</h2>
                 </div>
                 <div className="col-md-8">
+                    <img className="me" src={me}></img>
                     <p>
                         6년차 웹 개발자입니다. <br/>
                         주로 Springframework 기반의 웹 개발 프로젝트를 참여하였으며, 최근에는 Angular6 를 기반으로 프론트엔드 개발을 담당하였습니다.<br/>

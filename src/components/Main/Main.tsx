@@ -14,9 +14,9 @@ class Main extends Component<MyProps, MyState> {
     updateDimensions = () => {
         console.log(window.innerWidth);
         this.setState({
-            x: Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10)),
+            x: Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10)),
             y: (window.innerWidth > 400  ? 20 : 40),
-            tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
+            tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
             yArr: Array.from(Array(20), () => 0),
             nameLocation: new Array()
         });
@@ -33,9 +33,9 @@ class Main extends Component<MyProps, MyState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            x: Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10)),
+            x: Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10)),
             y: (window.innerWidth > 400  ? 20 : 40),
-            tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-80)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
+            tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
             yArr: Array.from(Array(20), () => 0),
             nameLocation: new Array()
         };
