@@ -32,7 +32,7 @@ export default class Naigator extends Component<navProps, navState> {
       <div className="navigationContainer">
         <div className="navigationWrapper">
           <div className="navigationLogo">
-              <img className="logo" src={logo}></img>
+              <img className="logo" src={logo} alt="logo"></img>
           </div>
           <div className="navigationMenu">
             <div className="navigationMenuList">

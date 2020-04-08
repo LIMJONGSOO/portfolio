@@ -4,7 +4,6 @@ import './Projects.scss';
 import ProjectDatas from './ProjectDatas'
 import fold from 'src/images/fold.png';
 import unfold from 'src/images/unfold.png';
-import koreanair from 'src/images/koreanair.png'
 
 type projectProps = { };
 type projectState = { 

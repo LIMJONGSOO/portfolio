@@ -18,7 +18,7 @@ class Main extends Component<MyProps, MyState> {
             y: (window.innerWidth > 400  ? 20 : 40),
             tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
             yArr: Array.from(Array(20), () => 0),
-            nameLocation: new Array()
+            nameLocation: []
         });
         this.drawNameLocation();
     };
@@ -37,7 +37,7 @@ class Main extends Component<MyProps, MyState> {
             y: (window.innerWidth > 400  ? 20 : 40),
             tableArr: Array.from(Array(20), () => Array.from(Array(Math.floor((window.innerWidth-40)/(window.innerWidth > 400  ? 20 : 10))), () => 'black')),
             yArr: Array.from(Array(20), () => 0),
-            nameLocation: new Array()
+            nameLocation: []
         };
     }
 
@@ -110,9 +110,9 @@ class Main extends Component<MyProps, MyState> {
 
     drawPuzzle() {
         let stop = true;
-        this.state.yArr.map((xCnt, i) => {
-            if(xCnt < this.state.x ) stop =false;
-        })
+        this.state.yArr
+            .filter(xCnt => xCnt < this.state.x)
+            .map((xCnt, i) => stop =false)
         if (!stop) {
             setTimeout(() => {
                 const newTableArr = Array.from(Array(this.state.y), () => Array.from(Array(this.state.x), () => 'black'));
@@ -121,16 +121,14 @@ class Main extends Component<MyProps, MyState> {
                 this.state.yArr.map((xCnt, i) => {
                     newYArr[i] = xCnt + Math.ceil(Math.random()*10);
                     
-                    this.state.tableArr[i].map((color, j) => {
-                        if (newYArr[i] > j) {
-                            let color = 'yellow';
-
-                            this.state.nameLocation.map((name, k) => {
-                                 if (name.x === j && name.y === i) color = 'black';
-                            })
-                            newTableArr[i][j] = color;
-                        }
-                    })
+                    this.state.tableArr[i]
+                        .filter((color, j) => newYArr[i] > j)
+                        .map((color, j) => {
+                            newTableArr[i][j] = 'yellow';
+                            this.state.nameLocation
+                                .filter((name, k) => name.x === j && name.y === i)
+                                .map((name, k) => newTableArr[i][j] =  'black')
+                        })
                 })
                 this.setState({ tableArr: newTableArr, yArr: newYArr });
             }, 100);
@@ -161,7 +159,7 @@ class Main extends Component<MyProps, MyState> {
                     <br />
                     <span>Web Developer</span>
                     <br />
-                    <a href="#" className="resume">Download Resume</a>
+                    <div className="resume">Download Resume</div>
                 </div>
             </div>
           );
