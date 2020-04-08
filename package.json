@@ -95,7 +95,7 @@
     "@types/styled-components": "^5.0.1",
     "gh-pages": "^2.2.0"
   },
-  "homepage": "http://limjongsoo.github.io/jongsoo",
+  "homepage": "http://limjongsoo.github.io",
   "jest": {
     "roots": [
       "<rootDir>/src"
