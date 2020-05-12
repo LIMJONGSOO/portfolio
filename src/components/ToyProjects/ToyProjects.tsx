@@ -33,7 +33,7 @@ class ToyProjects extends Component<projectProps, projectState> {
             ToyProjects (총 {this.state.projectList.length}개)
           </h2>
           <div>
-            <div className="projects">
+            <div className="toyprojects">
               {this.state.projectList.map(
                 (project, i) => (
                   <div key={i} className="ogType" onClick={()=> this.clickToyProject(project.url)}>
