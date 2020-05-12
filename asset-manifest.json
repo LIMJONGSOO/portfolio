@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1d05c6e5.chunk.css",
-    "main.js": "/portfolio/static/js/main.0ec9c794.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0ec9c794.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1563040c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1563040c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.7746ca6c.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.7746ca6c.js.map",
-    "static/js/2.6305371a.chunk.js": "/portfolio/static/js/2.6305371a.chunk.js",
-    "static/js/2.6305371a.chunk.js.map": "/portfolio/static/js/2.6305371a.chunk.js.map",
+    "static/js/2.32a12f69.chunk.js": "/portfolio/static/js/2.32a12f69.chunk.js",
+    "static/js/2.32a12f69.chunk.js.map": "/portfolio/static/js/2.32a12f69.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ecfe977b29df3525a5c65fc2e692fb31.js": "/portfolio/precache-manifest.ecfe977b29df3525a5c65fc2e692fb31.js",
+    "precache-manifest.07672b3463b0ca8e3b57e97bc05bf3f6.js": "/portfolio/precache-manifest.07672b3463b0ca8e3b57e97bc05bf3f6.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.1d05c6e5.chunk.css.map": "/portfolio/static/css/main.1d05c6e5.chunk.css.map",
-    "static/js/2.6305371a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6305371a.chunk.js.LICENSE.txt",
+    "static/js/2.32a12f69.chunk.js.LICENSE.txt": "/portfolio/static/js/2.32a12f69.chunk.js.LICENSE.txt",
     "static/media/CSS.png": "/portfolio/static/media/CSS.7583a74e.png",
     "static/media/JAVA.png": "/portfolio/static/media/JAVA.a056e21f.png",
     "static/media/JSP.png": "/portfolio/static/media/JSP.9075d3de.png",
@@ -28,12 +28,13 @@
     "static/media/limjs.jpg": "/portfolio/static/media/limjs.e9ab50e3.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.43b9f4a0.png",
     "static/media/maven.png": "/portfolio/static/media/maven.3d33f90f.png",
+    "static/media/mongobook.png": "/portfolio/static/media/mongobook.353f26fb.png",
     "static/media/oracle.png": "/portfolio/static/media/oracle.4058474a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7746ca6c.js",
-    "static/js/2.6305371a.chunk.js",
+    "static/js/2.32a12f69.chunk.js",
     "static/css/main.1d05c6e5.chunk.css",
-    "static/js/main.0ec9c794.chunk.js"
+    "static/js/main.1563040c.chunk.js"
   ]
 }
