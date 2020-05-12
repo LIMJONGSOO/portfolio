@@ -1,20 +1,5 @@
-import angular from "src/images/Angular.png";
-import less from "src/images/less.png";
-import swagger from "src/images/swagger.png";
-import typescript from "src/images/Typescript.png";
-import javascript from "src/images/js.png";
-import jquery from "src/images/jQuery.png";
-import jsp from "src/images/JSP.png";
-import spring from "src/images/Spring.png";
-import html from "src/images/HTML.png";
-import css from "src/images/CSS.png";
-import git from "src/images/git.png";
-import svn from "src/images/SVN.png";
-import maven from "src/images/maven.png";
-import oracle from "src/images/oracle.png";
-import db2 from "src/images/oracle.png";
-import android from "src/images/android.png";
-import phonegap from "src/images/Phonegap.png";
+import reactris from "src/images/reactris.png";
+import mongobook from "src/images/mongobook.png";
 
 const ProjectDatas = [
   {
@@ -26,7 +11,7 @@ const ProjectDatas = [
       "IPhone8 Frame 기준",
     ],
     url: "https://limjongsoo.github.io/reactris/",
-    image: angular,
+    image: reactris,
   },
   {
     projectName: "MongoBook",
@@ -38,7 +23,7 @@ const ProjectDatas = [
       "IPhone8 Frame 기준",
     ],
     url: "https://limjongsoo.github.io/mongobook/",
-    image: angular,
+    image: mongobook,
   },
 ];
 
