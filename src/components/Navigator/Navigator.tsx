@@ -1,30 +1,28 @@
-import React, {Component} from 'react';
-import './Navigator.scss';
-import logo from 'src/images/logo.png';
+import React, { Component } from "react";
+import "./Navigator.scss";
+import logo from "src/images/logo.png";
 
-
-type navProps = { };
-type navState = { 
-    upButtonShow:boolean
- };
+type navProps = {};
+type navState = {
+  upButtonShow: boolean;
+};
 
 export default class Naigator extends Component<navProps, navState> {
-
   componentDidMount() {
-    window.addEventListener('scroll', () => {
-      this.setState({upButtonShow: window.scrollY === 0 ? false : true});
+    window.addEventListener("scroll", () => {
+      this.setState({ upButtonShow: window.scrollY === 0 ? false : true });
     });
   }
 
   constructor(props: any) {
     super(props);
     this.state = {
-        upButtonShow: false
+      upButtonShow: false,
     };
   }
 
   scrollMoveTop() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 
   public render() {
@@ -32,13 +30,14 @@ export default class Naigator extends Component<navProps, navState> {
       <div className="navigationContainer">
         <div className="navigationWrapper">
           <div className="navigationLogo">
-              <img className="logo" src={logo} alt="logo"></img>
+            <img className="logo" src={logo} alt="logo"></img>
           </div>
           <div className="navigationMenu">
             <div className="navigationMenuList">
-              <a href="#about">About Me</a> 
-              <a href="#skills">Skills</a> 
+              <a href="#about">About Me</a>
+              <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
+              <a href="#toyprojects">ToyProjects</a>
             </div>
             <div className="navigationEnd">
               <div className="socialContainer">
@@ -75,15 +74,17 @@ export default class Naigator extends Component<navProps, navState> {
             </div>
           </div>
         </div>
-        {this.state.upButtonShow && 
+        {this.state.upButtonShow && (
           <a href="#" className="upButton" onClick={this.scrollMoveTop}>
             <svg viewBox="0 0 24 24">
-              <path fill="#3a3934" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"></path>
+              <path
+                fill="#3a3934"
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"
+              ></path>
             </svg>
           </a>
-        }
+        )}
       </div>
     );
   }
 }
-
