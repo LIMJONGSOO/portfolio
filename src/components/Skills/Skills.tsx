@@ -18,7 +18,7 @@ function Skills() {
   return (
     <div id="skills" className="container">
       <div id="skills">
-        <h2>Skills</h2>
+        <h1>Skills</h1>
         <div className="skills">
           <img src={Angular} alt="" />
           <img src={react} alt="" />

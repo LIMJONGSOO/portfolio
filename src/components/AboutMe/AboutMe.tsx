@@ -7,7 +7,7 @@ function AboutMe() {
     <div id="about" className="container">
       <div className="row">
         <div className="col-md-4">
-          <h2 className="heading">About Me</h2>
+          <h1 className="heading">About Me</h1>
         </div>
         <div className="col-md-8">
           <img className="me" src={me} alt="jslim"></img>

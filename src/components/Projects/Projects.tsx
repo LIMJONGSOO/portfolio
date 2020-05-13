@@ -39,9 +39,9 @@ class Projects extends Component<projectProps, projectState> {
     return (
       <div className="container" id="projects">
         <div className="background-alt">
-          <h2 className="heading">
+          <h1 className="heading">
             Projects (총 {this.state.projectList.length}개)
-          </h2>
+          </h1>
           <div>
             <div className="projects">
               <table className="project-list-table">

@@ -11,6 +11,8 @@ type projectState = {
     projectDesc: Array<string>;
     url: string;
     image: any;
+    git: string;
+    figma: string;
   }>;
 };
 class ToyProjects extends Component<projectProps, projectState> {
@@ -29,9 +31,9 @@ class ToyProjects extends Component<projectProps, projectState> {
     return (
       <div className="container" id="toyprojects">
         <div className="background-alt">
-          <h2 className="heading">
+          <h1 className="heading">
             ToyProjects (총 {this.state.projectList.length}개)
-          </h2>
+          </h1>
           <div>
             <div className="toyprojects">
               {this.state.projectList.map(
@@ -47,7 +49,14 @@ class ToyProjects extends Component<projectProps, projectState> {
                           (desc) => (
                             <div>{desc}</div>
                           )
-                        )}</div>
+                        )}
+                      </div>
+                      <div className="url">
+                        <a href="#none" onClick={()=> this.clickToyProject(project.git)}>Git Repository</a>
+                      </div>
+                      <div className="url">
+                        <a href="#none" onClick={()=> this.clickToyProject(project.figma)}>설계 퍼블</a>
+                      </div>
                     </div>
                   </div>
                 )
