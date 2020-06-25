@@ -159,18 +159,18 @@ const ProjectDatas = [
     skills: [spring, maven, javascript, jsp, jquery, html, css, db2, svn],
   },
   {
-    projectName: "[제주항공] SmartDoc",
+    projectName: "SmartDoc",
     startDate: "2014.03",
     endDate: "2014.09",
     projectDesc:
-      "공공데이터 포털로 생활지수 정보 제공, 근처 응급실 위치정보 제공, 자가진단 서비를 제공하는 하이브리드 앱 개발",
+      "공공데이터 포털로 생활지수 정보 제공, 근처 응급실 위치정보 제공, 자가진단 서비스를 제공하는 하이브리드 앱 개발",
     myTasklist: [
       "공공데이터 포털 API로 생활지수 정보 조회, 응급실 위치정보 제공 서비스 하이브리드 앱 개발",
     ],
     skills: [android, phonegap],
   },
   {
-    projectName: "[제주항공] 스마트 디바이스 개발",
+    projectName: "스마트 디바이스 개발",
     startDate: "2013.09",
     endDate: "2013.12",
     projectDesc:

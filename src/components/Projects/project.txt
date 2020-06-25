@@ -1,0 +1,162 @@
+4 - 대규모 프로그램 및 시스템을 참고사항(책/인터넷)없이 개발할 수 있으며, 일반적이지 않은 난해한 부분도 일부 참고를 통해 개발할 수 있음
+3 - 중간규모 프로그램 및 시스템을 개발할수 있으며, 주요 이슈 트러블슈팅을 할 수 있을 정도로 내부구조에 대해 이해하고 있음
+2 - 시스템 동작 방식을 알고 있으며, 기본적인 기능을 구현할 수 있음
+1 - 코드를 읽을 수 있으며, 책을 참고하여 약간의 수정작업 또는 작은 변경사항 추가를 할 수 있음
+0 - 경험/지식 없음
+
+1 React - 2
+2 Angular - 3
+3 nodejs - 2
+4 ngrx - 2
+5 Typescript - 3
+6 Javascript - 3
+7 ES6 - 3
+8 jQuery - 3
+9 JSP - 3
+10 HTML - 3
+11 CSS - 3
+12 less - 2
+13 scss - 2
+14 Spring - 3
+15 maven - 3
+16 JAVA - 3
+17 git - 3
+18 svn - 3
+19 mongoDB - 1
+20 Oracle - 3
+21 android - 1
+22 figma - 1
+
+  
+  
+  
+  1) 진행기간 : 2020.04 ~  2020.05
+  2) 주요내용 : [mongobook] 북마크 관리 웹, 북마크 관리 서비스, Crawler 기능
+  3) 본인이 공헌한 점 : figma 설계 및 퍼블리싱, 
+                       프론트엔드 북마크 관리 페이지 개발,
+                       백엔드 Atlas MongoDB 클라우드 CRUD 웹 서비스 개발,
+                       백엔드 Crawler 기능 개발
+  4) 사용한 Skill 또는 지식 : figma, Express, nodejs, mongoDB, heroku, atlas, crawler, open-grapgh, React, git, github-page
+  5) 결과/성과 : figma 퍼블리싱 경험, React 개발, heroku 백엔드 서버 배포 경험, github-page 배포 경험, altas MongoDB 웹서비스 개발 경험, 
+  https://limjongsoo.github.io/mongobook/
+  
+  1) 진행기간 : 2020.04 ~ 2020.04
+  2) 주요내용 : [reactris] 테트리스 게임 웹
+  3) 본인이 공헌한 점 : figma 설계 및 퍼블리싱, 
+                       테트리스 게임 웹 개발
+  4) 사용한 Skill 또는 지식 : figma, React, git, github-page
+  5) 결과/성과 : figma 퍼블리싱 경험, React 개발, github-page 배포 경험
+  https://limjongsoo.github.io/reactris/
+  
+  1) 진행기간 : 2020.01 ~ 
+  2) 주요내용 : [대한항공] 홈페이지(예약발권시스템) 개편
+  3) 본인이 공헌한 점 : 프론트엔드(여정검색, 항공편선택, 여정변경) 개발, 
+                        달력 공통 컴포넌트 개발, 
+                        swagger SDK 생성
+  4) 사용한 Skill 또는 지식 : Angular, ngrx, TypeScript, html, less, git, swagger, 
+  5) 결과/성과 : Angular 구현 경험, SDK 생성 경험
+
+  
+  1) 진행기간 : 2019.08 ~ 2019.12
+  2) 주요내용 : [플라이강원] 신규 항공사 플라이강원의 비행기록시스템 개발
+  3) 본인이 공헌한 점 : Spring Framework을 기반으로한 웹 페이지 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : 비행기록 비지니스 프로세스 경험, 웹 페이지 개발
+
+  
+  1) 진행기간 : 2019.03 ~ 2019.07
+  2) 주요내용 : [제주항공] 예약발권 시스템 고도화 및 전자상거래 솔루션 하이브리스 도입
+  3) 본인이 공헌한 점 : 웹서비스 인터페이스 변경
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : 예약발권 시스템 솔루션 변경
+
+  
+  1) 진행기간 : 2018.09 ~ 2019.02
+  2) 주요내용 : [아시아나항공] IUP 부가서비스 판매 기능 개발 (IUP-좌석업그레이드)
+  3) 본인이 공헌한 점 : Spring Framework을 기반으로한 PC/MOBILE 웹 페이지 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : 해당 서비스로 수익 창출, 웹 페이지 개발
+
+
+  1) 진행기간 : 2017.08 ~ 2018.08
+  2) 주요내용 : [아시아나항공] 홈페이지 개편, 예매/부가 서비스 고도화
+  3) 본인이 공헌한 점 : Spring Framework을 기반으로한 PC/MOBILE 웹 페이지 개발, 
+                       미들웨어 서버의 RESTful 웹 서비스 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : PC,모바일 WEB, APP 평균 30%의 속도 향상 및 안정성 개선
+
+
+  1) 진행기간 : 2017.03 ~ 2017.07
+  2) 주요내용 : [제주항공] 제주항공 여행사우대사이트에서 부가서비스 구매 서비스 구현
+  3) 본인이 공헌한 점 : PC/MOBILE WEB 부가서비스 환불 웹 페이지 및 기능 개발,
+                       Back End 웹서비스 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, db2, svn
+  5) 결과/성과 : Spring 기반 웹 페이지, 웹서비스 개발
+
+  
+  1) 진행기간 : 2016.09 ~ 2017.02
+  2) 주요내용 : [아시아나항공] 오프라인으로 작업하던 이륙성능자료 관리를 온라인화, 이륙성능자료 계산 속도와 정확성 향상
+  3) 본인이 공헌한 점 : 이륙성능자료 전송 기능 관리자 웹 페이지 개발,
+                       ActiveMQ 서버로 이륙성능자료 전송 Back End 웹서비스 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : Spring 기반 웹 페이지, 웹서비스 개발
+
+  
+  1) 진행기간 : 2016.08 ~ 2016.09
+  2) 주요내용 : [아시아나항공 / 아시아나에어포트] WMS 통합제한서 작업
+  3) 본인이 공헌한 점 : 항공기 화물을 온라인 관리시스템 Warehouse Manager System 통합 제한서 작업
+  4) 사용한 Skill 또는 지식 : 
+  5) 결과/성과 : 제안서 작업 경험, 제안서 호평
+
+  
+  1) 진행기간 : 2016.04 ~ 2016.07
+  2) 주요내용 : [제주항공] 제주항공 홈페이지 항공권 예약서비스 고도화
+  3) 본인이 공헌한 점 : UX 설계에 따른 HTML, JAVA, javascript, JSP 을 이용하여 Front End 개발,
+                        Back End 웹서비스 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, db2, svn
+  5) 결과/성과 : Spring 기반 웹 페이지, 웹서비스 개발
+
+  
+  1) 진행기간 : 2016.03 ~ 2016.04
+  2) 주요내용 : [제주항공] 제주항공 홈페이지 사전수하물 부가서비스 구현
+  3) 본인이 공헌한 점 : 사전수하물 구매 웹 페이지 개발,
+                        RESTful JSON 웹 서비스 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, db2, svn
+  5) 결과/성과 : Spring 기반 웹 페이지, 웹서비스 개발
+
+  
+  1) 진행기간 : 2015.07 ~ 2016.02
+  2) 주요내용 : [아시아나항공] 아시아나항공 홈페이지 미국 장애인차별금지법에 준수하는 웹 접근성을 제공하도록 개편
+  3) 본인이 공헌한 점 : 장차법에 준수하는 웹 접근성을 제공하도록 웹 페이지 수정
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, oracle, svn
+  5) 결과/성과 : 장차법 적용 경험
+
+  
+  1) 진행기간 : 2015.04 ~ 2015.06
+  2) 주요내용 : [제주항공] 기업회원을 추가, 기업별로 할인혜택을 제공하는 서비스 구축, 기업우대 서비스 관리자 페이지 구축
+  3) 본인이 공헌한 점 : 기업회원 관리하는 웹 페이지 개발(사내시스템)
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, db2, svn
+  5) 결과/성과 :  Spring 기반 웹 페이지 개발
+
+  
+  1) 진행기간 : 2015.01 ~ 2015.03
+  2) 주요내용 : [제주항공] AUTH 관리시스템 구축
+  3) 본인이 공헌한 점 : 데이터(AUTH)를 조회하는 관리자 웹 페이지 개발
+  4) 사용한 Skill 또는 지식 : Spring, maven, JAVA, javascript, jsp, jQuery, html, css, db2, svn
+  5) 결과/성과 : Spring 기반 웹 페이지 개발
+
+  
+  1) 진행기간 : 2014.03 ~ 2014.09
+  2) 주요내용 : [SmartDoc] 공공데이터 포털로 생활지수 정보 제공, 근처 응급실 위치정보 제공, 자가진단 서비스를 제공하는 하이브리드 앱 개발
+  3) 본인이 공헌한 점 : 공공데이터 포털 API로 생활지수 정보 조회, 
+                       응급실 위치정보 제공 서비스 하이브리드 앱 개발
+  4) 사용한 Skill 또는 지식 : android, phonegap
+  5) 결과/성과 : Android 구현 경험
+
+  
+  1) 진행기간 : 2013.09 ~ 2013.12
+  2) 주요내용 : 압력 센서를 장착한 스마트 슈즈 제작, 압력정보로 걸음걸이를 분석하는 앱(WalkChecker) 개발
+  3) 본인이 공헌한 점 : 스마트 슈즈와 블루투스 통신 개발하여 실시간 걸음걸이 압력정보로 분석하는 앱 개발,
+                        실시간 걸음걸이 압력정보로 데이터화하여 제공하는 앱 개발
+  4) 사용한 Skill 또는 지식 : android
+  5) 결과/성과 : Android 구현 경험, Wearable Device 연동 구현 경험
