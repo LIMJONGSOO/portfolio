@@ -15,12 +15,59 @@ import oracle from "src/images/oracle.png";
 import db2 from "src/images/oracle.png";
 import android from "src/images/android.png";
 import phonegap from "src/images/Phonegap.png";
+import websq from "src/images/websquare.png";
 
 const ProjectDatas = [
   {
+    projectName: "[대한항공] 홈페이지 운영",
+    startDate: "2022.02",
+    endDate: "",
+    projectDesc: "대한항공 홈페이지 운영",
+    myTasklist: [
+      "무상 항공권 발권 담당",
+      "공통 컴포넌트 관리",
+      "Angular version upgrade 8 -> 15",
+      "프로젝트 최적화"
+    ],
+    skills: [angular, javascript, html, less, css, git],
+  },
+  {
+    projectName: "[하나금융티아이] 하나캐피탈 자산관리시스템 운영",
+    startDate: "2021.02",
+    endDate: "2022.01",
+    projectDesc: "하나캐피탈 자산관리시스템 운영",
+    myTasklist: [
+      "",
+      "",
+    ],
+    skills: [angular, javascript, html, css, spring, svn],
+  },
+  {
+    projectName: "[하나금융티아이] 하나캐피탈 자산관리시스템 구축",
+    startDate: "2020.12",
+    endDate: "2021.02",
+    projectDesc: "하나캐피탈 자산관리시스템 및 관리자 페이지 개발",
+    myTasklist: [
+      "",
+      "",
+    ],
+    skills: [angular, javascript, html, css, spring, svn],
+  },
+  {
+    projectName: "[하나금융티아이] 하나저축은행 관리자 개편",
+    startDate: "2020.10",
+    endDate: "2020.12",
+    projectDesc: "하나저축은행 관리자 개편 프로젝트 지원",
+    myTasklist: [
+      "",
+      "",
+    ],
+    skills: [websq, javascript, html],
+  },
+  {
     projectName: "[대한항공] 홈페이지 개편",
     startDate: "2020.01",
-    endDate: "",
+    endDate: "2020.10",
     projectDesc: "대한항공 홈페이지(예약발권시스템) 개편",
     myTasklist: [
       "프론트엔드(여정검색, 항공편선택, 여정변경) 개발",
